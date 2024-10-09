@@ -1,0 +1,130 @@
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), /* Semi-transparent black overlay */
+    url(https://cdn.sanity.io/images/cxgd3urn/production/1eae8d36da0cb97b9b9dbec959e36cce1c051b60-3543x2020.jpg?w=1200&h=684&fit=crop&auto=format);
+    padding-bottom: 100px;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff; 
+    position: relative;
+}
+
+/* Header Styling */
+header {
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Navigation Styling */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 30px;
+}
+
+.nav-right {
+    display: flex; 
+    align-items: center; 
+}
+
+
+nav {
+    color: rgb(63, 25, 25);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover Effects */
+nav a:hover {
+    background-color: rgba(30, 180, 17, 0.63);
+    color: #000;
+}
+
+.about {
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+.box {
+    background-color: #000; /* Solid black background for boxes */
+    margin-top: 2rem;
+    border-radius: 30px; /* Rounded corners */
+    padding: 40px;
+    width: 50%; /* Adjust width for boxes */
+    margin: 0 auto; /* Center the box within the section */
+    text-align: center; /* Center text within the box */
+}
+
+.box h1 {
+    font-size: 2.5em; /* Size of the main title */
+    margin-bottom: 5px; /* Space below the title */
+}
+
+/* Background Image Styling */
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Content Box Styling */
+.content {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-around; /* Space between boxes */
+    margin-top: 20px; /* Space above boxes */
+}
+
+.box {
+    background-color: #000; /* Solid black background for boxes */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    width: 45%; /* Adjust width for boxes */
+    box-shadow: 0 0 10px rgba(100, 97, 97, 0.274); /* Optional: slight shadow for depth */
+}
+
+.box h2 {
+    font-size: 1.5em; /* Title size for boxes */
+    margin-bottom: 10px; /* Space below the box title */
+}
+
+.box p {
+    font-size: 1em; /* Text size within boxes */
+    line-height: 1.6; /* Space between lines */
+}
+
+.gradient-background {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(150, 0, 0)); /* Example gradient */
+    padding: 50px; /* Padding for spacing */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    position: relative; /* Allow positioning */
+    margin-top: 20px; /* Space above this section */
+}
+
+footer {
+    margin-top: 20px; /* Space above the footer */
+    padding: 100px; /* Add padding inside the footer */
+    text-align: center; /* Center the footer text */
+}
