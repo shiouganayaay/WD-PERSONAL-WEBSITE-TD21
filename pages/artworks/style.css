@@ -148,20 +148,20 @@ nav a:hover {
 }
 
 .about-container, .content-wrapper {
-    width: 200%; /* Make sure the container stretches across */
-    max-width: 1200px; /* Optional: Set a max width for readability */
-    margin: 0 auto; /* Center it */
-    padding: 20px; /* Add some padding for space */
+    width: 200%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px; 
 }
 
 .content {
-    display: flex; /* Use flex to allow stretching */
-    justify-content: center; /* Center content horizontally */
+    display: flex;
+    justify-content: center;
 }
 
 .box {
-    width: 80%; /* Adjust this to make it stretch across more */
-    max-width: 800px; /* Optional: Set max width to control stretch */
+    width: 80%; 
+    max-width: 800px;
 }
 
 
@@ -251,9 +251,17 @@ p {
 }
 
 footer {
-    font-size: larger;
     margin-top: 20px;
     padding: 20px;
     text-align: center;
+    color: white; 
 }
 
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

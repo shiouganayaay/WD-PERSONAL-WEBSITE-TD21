@@ -91,17 +91,17 @@ nav a:hover {
 
 
 .content {
-    display: flex; /* Flexbox for layout */
-    justify-content: space-around; /* Space between boxes */
-    margin-top: 20px; /* Space above boxes */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 .box {
-    background-color: #000000; /* Solid black background for boxes */
-    border-radius: 20px; /* Rounded corners */
+    background-color: #000000;
+    border-radius: 20px;
     margin-top: 40px;
     padding: 20px;
-    width: 45%; /* Adjust width for boxes */
+    width: 45%;
 }
 
 .box h2 {
@@ -132,33 +132,33 @@ nav a:hover {
 
 .about-boxes {
     display: flex;
-    flex-direction: column; /* Stack boxes in a single column */
-    justify-content: center; /* Center them vertically if needed */
-    align-items: center; /* Center boxes horizontally */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 
 .box-content {
-    display: flex; /* Flex layout for each box */
-    justify-content: space-between; /* Space between text and image */
-    align-items: center; /* Center items vertically */
-    margin: 20px auto; /* Center the box and add vertical space */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 20px auto;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.842);
     border-radius: 10px;
-    width: 90%; /* Adjust width if needed */
+    width: 90%; 
 }
 
 .text-left {
-    width: 90%; /* Text takes up 45% of the box */
-    padding-right: 10px; /* Reduced padding for less space */
+    width: 90%;
+    padding-right: 10px;
     color: #ffffff;
-    text-align: center; /* Center the text horizontally */
+    text-align: center;
 }
 
 
 .image-right {
-    width: 50%; /* Image takes up 45% of the box */
+    width: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,10 +169,8 @@ nav a:hover {
     border-radius: 10px;
 }
 
-
-/* Add this new style for larger text */
 h2 {
-    font-size: 1em; /* Increase the size of the headings */
+    font-size: 1em;
 }
 
 h3{
@@ -180,17 +178,23 @@ h3{
 }
 
 p {
-    font-size: 1.5em; /* Increase the size of the paragraph text */
-    line-height: 1.6; /* Adjust line height for readability */
+    font-size: 1.5em;
+    line-height: 1.6; 
 }
 
-
-
 footer {
-    font-size: larger;
     margin-top: 20px;
     padding: 20px;
     text-align: center;
+    color: white; 
 }
 
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
  
