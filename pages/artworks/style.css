@@ -8,11 +8,11 @@ body {
     font-family: 'Times New Roman', Times, serif;
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), /* Semi-transparent black overlay */
-    url(https://cdn.sanity.io/images/cxgd3urn/production/1eae8d36da0cb97b9b9dbec959e36cce1c051b60-3543x2020.jpg?w=1200&h=684&fit=crop&auto=format);
-    padding-bottom: 100px;
-    background-size: cover; 
+    url(/assets/img/Basquiat_1.jpg);
+    padding-bottom: 120px;
+    background-size: 1900px; 
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     color: #ffffff; 
     position: relative;
 }
@@ -54,13 +54,13 @@ nav a:hover {
 }
 
 .about-container {
-    background-color: rgba(90, 18, 18, 0.795); /* Semi-transparent black background */
+    background-color: rgba(80, 13, 13, 0.884); /* Semi-transparent black background */
     padding: 20px; /* Padding around the content */
     margin: 20px auto; /* Center the box with margin */
     border-radius: 10px; /* Optional: Rounded corners */
 }
 
-div .about-content {
+.about-content {
     margin-bottom: 30px;
     display: flex;
 }
@@ -75,13 +75,11 @@ div .about-content {
 }
 
 .box {
-
     margin: 0 auto; /* Center the box within the section */
     text-align: center; /* Center text within the box */
 }
 
 .box h1 {
-
     font-size: 2.5em; /* Size of the main title */
     margin-bottom: 5px; /* Space below the title */
 }
@@ -126,9 +124,62 @@ div .about-content {
     margin-top: 20px;
 }
 
+.artworks {
+    text-align: center; /* Center the heading and boxes */
+    padding: 20px; /* Padding around the section */
+}
+
+.artwork-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+    justify-content: center; /* Center the boxes */
+    margin-top: 20px; /* Space above the artwork boxes */
+}
+
+.artwork-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px; /* Space around each box */
+    padding: 10px; /* Padding inside each box */
+    width: 500px; /* Fixed width for each box (you can change this value) */
+    box-sizing: border-box; /* Include padding and margin in the width */
+}
+
+
+.artwork-box img {
+    width: 100%; /* This makes the image fill the box */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 500px; /* Set a maximum width if needed */
+    border-radius: 10px; /* Optional: Rounds the corners of the image */
+}
+
+.artwork-box p {
+    color: #ffffff; /* Text color */
+    margin-top: 10px; /* Space above the text */
+}
+
+
+/* Add this new style for larger text */
+h2 {
+    font-size: 1em; /* Increase the size of the headings */
+}
+
+h3{
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.5em; /* Increase the size of the paragraph text */
+    line-height: 1.6; /* Adjust line height for readability */
+}
+
+
+
 footer {
+    font-size: larger;
     margin-top: 20px;
     padding: 20px;
     text-align: center;
 }
+
  
