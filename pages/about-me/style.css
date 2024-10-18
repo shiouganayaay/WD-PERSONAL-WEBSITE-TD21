@@ -7,8 +7,7 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), /* Semi-transparent black overlay */
-    url(/assets/img/Basquiat_1.jpg);
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/assets/img/Basquiat_1.jpg);
     padding-bottom: 120px;
     background-size: 1900px; 
     background-position: center;
@@ -54,10 +53,10 @@ nav a:hover {
 }
 
 .about-container {
-    background-color: rgba(80, 13, 13, 0.884); /* Semi-transparent black background */
-    padding: 20px; /* Padding around the content */
-    margin: 20px auto; /* Center the box with margin */
-    border-radius: 10px; /* Optional: Rounded corners */
+    background-color: rgba(80, 13, 13, 0.884);
+    padding: 20px;
+    margin: 0px auto; 
+    border-radius: 10px;
 }
 
 .about-content {
@@ -75,22 +74,22 @@ nav a:hover {
 }
 
 .box {
-    margin: 0 auto; /* Center the box within the section */
-    text-align: center; /* Center text within the box */
+    margin: 0 auto;
+    text-align: center;
 }
 
 .box h1 {
-    font-size: 2.5em; /* Size of the main title */
-    margin-bottom: 5px; /* Space below the title */
+    font-size: 2.5em;
+    margin-bottom: 5px;
 }
 
-/* Background Image Styling */
+
 .background-image {
     width: 100%;
     height: auto;
 }
 
-/* Content Box Styling */
+
 .content {
     display: flex; /* Flexbox for layout */
     justify-content: space-around; /* Space between boxes */

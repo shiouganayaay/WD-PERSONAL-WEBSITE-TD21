@@ -7,8 +7,7 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), /* Semi-transparent black overlay */
-    url(/assets/img/Basquiat_1.jpg);
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/assets/img/Basquiat_1.jpg);
     padding-bottom: 120px;
     background-size: 1900px; 
     background-position: center;
@@ -27,6 +26,10 @@ header {
     top: 0;
     left: 0;
     color: white;
+}
+
+.Homepage {
+    padding-top: 90px;
 }
 
 nav {
@@ -54,10 +57,11 @@ nav a:hover {
 }
 
 .about-container {
-    background-color: rgba(80, 13, 13, 0.884); /* Semi-transparent black background */
-    padding: 20px; /* Padding around the content */
-    margin: 20px auto; /* Center the box with margin */
-    border-radius: 10px; /* Optional: Rounded corners */
+    align-items: center;
+    background-color: rgba(80, 13, 13, 0.884);
+    padding: 20px; 
+    margin: 20px auto; 
+    border-radius: 10px;
 }
 
 .about-content {
@@ -67,7 +71,7 @@ nav a:hover {
 
 
 .about {
-    margin-top: 70px;
+    margin-top: 0px;
     margin-bottom: 40px;
     text-align: center;
     padding: 20px;
@@ -75,16 +79,44 @@ nav a:hover {
 }
 
 .box {
-    margin: 0 auto; /* Center the box within the section */
-    text-align: center; /* Center text within the box */
+    padding: 100px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .box h1 {
-    font-size: 2.5em; /* Size of the main title */
-    margin-bottom: 5px; /* Space below the title */
+    font-size: 2.5em;
+    margin-bottom: 5px;
 }
 
-/* Background Image Styling */
+
+.inspiration-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.inspiration-box {
+    text-align: center; 
+    width: 30%;
+}
+
+.inspiration-box img {
+    display: flex;
+    max-width: 100%; 
+    max-height: 100%;
+    height: auto; 
+    display: block;
+}
+
+.inspiration-box a {
+    
+    text-decoration: none; 
+    color: inherit;
+}
+
+
 .background-image {
     width: 100%;
     height: auto;
@@ -92,17 +124,17 @@ nav a:hover {
 
 /* Content Box Styling */
 .content {
-    display: flex; /* Flexbox for layout */
-    justify-content: space-around; /* Space between boxes */
-    margin-top: 20px; /* Space above boxes */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 .box {
-    background-color: #000000; /* Solid black background for boxes */
-    border-radius: 20px; /* Rounded corners */
+    background-color: #000000;
+    border-radius: 20px; 
     margin-top: 40px;
     padding: 20px;
-    width: 45%; /* Adjust width for boxes */
+    width: 45%;
 }
 
 .box h2 {
@@ -115,6 +147,24 @@ nav a:hover {
     line-height: 1.6;
 }
 
+.about-container, .content-wrapper {
+    width: 200%; /* Make sure the container stretches across */
+    max-width: 1200px; /* Optional: Set a max width for readability */
+    margin: 0 auto; /* Center it */
+    padding: 20px; /* Add some padding for space */
+}
+
+.content {
+    display: flex; /* Use flex to allow stretching */
+    justify-content: center; /* Center content horizontally */
+}
+
+.box {
+    width: 80%; /* Adjust this to make it stretch across more */
+    max-width: 800px; /* Optional: Set max width to control stretch */
+}
+
+
 .gradient-background {
     background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(150, 0, 0));
     padding: 50px;
@@ -125,43 +175,70 @@ nav a:hover {
 }
 
 .artworks {
-    text-align: center; /* Center the heading and boxes */
-    padding: 20px; /* Padding around the section */
+    text-align: center;
+    padding: 20px;
 }
 
 .artwork-container {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow boxes to wrap to the next line */
-    justify-content: center; /* Center the boxes */
-    margin-top: 20px; /* Space above the artwork boxes */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-top: 20px;
 }
 
 .artwork-box {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    border-radius: 10px; /* Rounded corners */
-    margin: 10px; /* Space around each box */
-    padding: 10px; /* Padding inside each box */
-    width: 500px; /* Fixed width for each box (you can change this value) */
-    box-sizing: border-box; /* Include padding and margin in the width */
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+    margin: 10px; 
+    padding: 10px;
+    width: 500px; 
+    box-sizing: border-box;
 }
 
 
 .artwork-box img {
-    width: 100%; /* This makes the image fill the box */
-    height: auto; /* Maintains aspect ratio */
-    max-width: 500px; /* Set a maximum width if needed */
-    border-radius: 10px; /* Optional: Rounds the corners of the image */
+    width: 100%;
+    height: auto;
+    max-width: 500px; 
+    border-radius: 10px; 
 }
 
 .artwork-box p {
-    color: #ffffff; /* Text color */
-    margin-top: 10px; /* Space above the text */
+    color: #ffffff;
+    margin-top: 10px;
 }
 
+.artwork-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+}
 
-/* Add this new style for larger text */
+.big-artwork-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 800px;
+    height: auto;
+    min-height: 300px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.781); 
+    border-radius: 10px;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.big-artwork-box img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; 
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
 h2 {
-    font-size: 1em; /* Increase the size of the headings */
+    font-size: 1em;
 }
 
 h3{
@@ -169,11 +246,9 @@ h3{
 }
 
 p {
-    font-size: 1.5em; /* Increase the size of the paragraph text */
-    line-height: 1.6; /* Adjust line height for readability */
+    font-size: 1.5em; 
+    line-height: 1.6; 
 }
-
-
 
 footer {
     font-size: larger;
@@ -182,4 +257,3 @@ footer {
     text-align: center;
 }
 
- 
