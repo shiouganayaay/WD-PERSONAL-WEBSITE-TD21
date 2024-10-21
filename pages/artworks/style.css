@@ -122,7 +122,6 @@ nav a:hover {
     height: auto;
 }
 
-/* Content Box Styling */
 .content {
     display: flex;
     justify-content: space-around;
